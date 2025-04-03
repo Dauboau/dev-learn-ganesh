@@ -11,23 +11,23 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav align-items-center">
           <li class="nav-item">
             <a class="nav-link" href="">{{'News' | transloco}}</a>
           </li>
           <li class="nav-item">
             <div ngbDropdown>
               <button type="button" class="btn btn-outline-primary" id="language_dropdown" ngbDropdownToggle>
-                <img src="../../assets/{{selectedLanguage}}.svg" alt="Bandeira">
+                <img class="flag" src="../../assets/{{selectedLanguage}}.svg" alt="Bandeira">
                 {{selectedLanguage}}
               </button>
               <div ngbDropdownMenu aria-labelledby="language_dropdown">
                 <button ngbDropdownItem (click)="selectLanguage('pt-BR')">
-                  <img src="../../assets/pt-BR.svg" alt="Bandeira do Brasil">
+                  <img class="flag" src="../../assets/pt-BR.svg" alt="Bandeira do Brasil">
                   pt-BR
                 </button>
                 <button ngbDropdownItem (click)="selectLanguage('en-US')">
-                  <img src="../../assets/en-US.svg" alt="Bandeira dos EUA">
+                  <img class="flag" src="../../assets/en-US.svg" alt="Bandeira dos EUA">
                   en-US
                 </button>
               </div>

@@ -2,8 +2,8 @@
 
 .navbar{
     background-color: var(--default_gray);
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding-left: 17vw;
+    padding-right: 17vw;
 }
 
 #navbarNav{
@@ -21,8 +21,12 @@
 }
 
 img{
-    max-height: 30px;
+    max-height: 35px;
     width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #language_dropdown{
@@ -38,8 +42,16 @@ img{
     color: var(--default_light_gray);
 }
 
+.dropdown-menu{
+    text-align: center;
+}
+
 .nav-link:hover{
     color: var(--default_light_gray);
+}
+
+.flag{
+    height: 35px;
 }
 
 @media (max-width: 576px) {
