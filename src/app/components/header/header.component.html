@@ -1,19 +1,37 @@
 
-<nav class="navbar">
+<nav class="navbar navbar-expand-sm navbar-dark">
     <div class="container-fluid">
 
-      <a class="navbar-brand" href="#">
-        <img src="../assets/ganesh-logo-white.svg" alt="Logo" class="d-inline-block align-text-top">
+      <a class="navbar-brand" href="" routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <img src="../assets/ganesh-logo-white.svg" alt="Logo do Ganesh" class="d-inline-block align-text-top">
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menu de navegação">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Notícias</a>
+            <a class="nav-link" href="">Notícias</a>
+          </li>
+          <li class="nav-item">
+            <div ngbDropdown>
+              <button type="button" class="btn btn-outline-primary" id="language_dropdown" ngbDropdownToggle>
+                <img src="../../assets/{{selectedLanguage}}.svg" alt="Bandeira do Brasil">
+                {{selectedLanguage}}
+              </button>
+              <div ngbDropdownMenu aria-labelledby="language_dropdown">
+                <button ngbDropdownItem (click)="selectLanguage('pt-BR')">
+                  <img src="../../assets/pt-BR.svg" alt="Bandeira do Brasil">
+                  pt-BR
+                </button>
+                <button ngbDropdownItem (click)="selectLanguage('en-US')">
+                  <img src="../../assets/en-US.svg" alt="Bandeira dos EUA">
+                  en-US
+                </button>
+              </div>
+            </div>
           </li>
         </ul>
      </div>
