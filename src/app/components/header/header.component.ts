@@ -1,26 +1,27 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
-import { LanguageService } from '../../language.service';
-import { SupportedLanguage } from '../../enums/SupportedLanguage';
 
 @Component({
   selector: 'app-header',
-  imports: [NgbDropdownModule,RouterModule],
+  imports: [NgbDropdownModule,RouterModule,TranslocoModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
 
-  constructor(
-    private languageService: LanguageService
-  ) {}
+  selectedLanguage:string
 
-  selectedLanguage: string = this.languageService.getLanguage();
+  constructor(
+    private translocoService: TranslocoService
+  ) {
+    this.selectedLanguage = this.translocoService.getActiveLang();
+  }
 
   selectLanguage(language: string): void {
-    this.languageService.setLanguage(language as SupportedLanguage);
-    this.selectedLanguage = this.languageService.getLanguage();
+    this.translocoService.setActiveLang(language);
+    this.selectedLanguage = language;
   }
 
 }
