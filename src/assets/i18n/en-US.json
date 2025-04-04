@@ -1,4 +1,6 @@
 
 {
-    "News": "News"
+    "header":{
+        "news": "News"
+    }
 }

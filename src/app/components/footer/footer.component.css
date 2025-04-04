@@ -1,0 +1,40 @@
+
+.navbar{
+    background-color: black;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    height: 83px;
+}
+
+#navbarNav{
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-link{
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+p{
+    color: white;
+    align-self: center;
+    margin-bottom: 0px;
+}
+
+.nav-item-left{
+    padding-right: 1.5vw;
+}
+
+.nav-item-right{
+    padding-left: 2vw;
+}
+
+.nav-link:hover{
+    color: var(--default_light_gray);
+}
+
+#social-media{
+    font-size: 20px;
+}
+

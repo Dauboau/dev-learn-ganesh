@@ -2,8 +2,8 @@
 
 .navbar{
     background-color: var(--default_gray);
-    padding-left: 17vw;
-    padding-right: 17vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 #navbarNav{
