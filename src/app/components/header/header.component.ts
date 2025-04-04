@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -14,7 +14,8 @@ export class HeaderComponent {
   selectedLanguage:string
 
   constructor(
-    private translocoService: TranslocoService
+    private translocoService: TranslocoService,
+    private router: Router
   ) {
     this.selectedLanguage = this.translocoService.getActiveLang();
   }
@@ -22,6 +23,13 @@ export class HeaderComponent {
   selectLanguage(language: string): void {
     this.translocoService.setActiveLang(language);
     this.selectedLanguage = language;
+
+    const url = this.router.url;
+    this.router.navigateByUrl("/dummy", { skipLocationChange: true }).then(() => {
+      this.router.navigate([url]);
+      console.log("ok");
+    });
+
   }
 
 }

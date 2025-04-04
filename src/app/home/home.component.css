@@ -1,9 +1,32 @@
 
 :host {
     display: block;
-    background-image: url('../../assets/background.png');
+    background-image: url('../../assets/background-2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+}
+
+main{
+    color: white;
+}
+
+#title{
+    font-size: 3.75rem;
+}
+
+#subtitile{
+    font-size: 1.25rem;
+    max-width: 30vw;
+    text-align: center;
+}
+
+#logo{
+    width: 18rem;
+    padding-bottom: 1vh;
+}
+
+#section1{
+    height: 93vh;
 }
