@@ -1,8 +1,8 @@
 
 .navbar{
     background-color: black;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: var(--default_distance_border);
+    padding-right: var(--default_distance_border);
     height: 83px;
 }
 

@@ -30,3 +30,7 @@ main{
 #section1{
     height: 93vh;
 }
+
+#section2{
+    background-color: red;
+}

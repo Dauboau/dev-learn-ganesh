@@ -5,6 +5,7 @@
 :root {
     --default_gray: #2E2C2F;
     --default_light_gray: #BFBFBF;
+    --default_distance_border: 10vw;
 }
 
 body {
