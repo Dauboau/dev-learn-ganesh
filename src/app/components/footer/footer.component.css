@@ -1,9 +1,16 @@
 
-.navbar{
+footer{
+    display: flex;
+    justify-content: center;
     background-color: black;
+}
+
+.navbar{
     padding-left: var(--default_distance_border);
     padding-right: var(--default_distance_border);
     height: 83px;
+    width: 100%;
+    max-width: var(--default_max_width);
 }
 
 #navbarNav{
