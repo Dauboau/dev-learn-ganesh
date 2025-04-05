@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100dvh;
-    animation: moveBackground 50s linear infinite;
+    animation: moveBackground 100s linear infinite;
 }
 
 @keyframes moveBackground {
