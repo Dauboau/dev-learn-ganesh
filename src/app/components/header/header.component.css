@@ -63,8 +63,8 @@ img{
 
 @media (max-width: 1000px) {
     .navbar{
-        padding-left: var(--default_distance_border_mobile);
-        padding-right: var(--default_distance_border_mobile);
+        padding-left: max(var(--default_distance_border_mobile), env(safe-area-inset-left));
+        padding-right: max(var(--default_distance_border_mobile), env(safe-area-inset-left));
     }
     #language_dropdown img {
         display: none;

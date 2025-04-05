@@ -23,6 +23,11 @@ main{
     min-height: 93dvh;
 }
 
+#section2{
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+}
+
 #section2_aux{
     background-color: var(--default_section_background);
     margin-left: var(--default_distance_border);

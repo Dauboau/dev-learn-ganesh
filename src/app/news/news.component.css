@@ -79,8 +79,8 @@ ngb-pagination::ng-deep .page-item.active .page-link:hover {
 
 @media (max-width: 1000px) {
     main{
-        margin-left: var(--default_distance_border_mobile);
-        margin-right: var(--default_distance_border_mobile);
+        margin-left: max(var(--default_distance_border_mobile), env(safe-area-inset-left));
+        margin-right: max(var(--default_distance_border_mobile), env(safe-area-inset-left));
     }
     section{
         padding: 0.75rem;
