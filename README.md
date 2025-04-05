@@ -4,6 +4,7 @@ Este projeto foi desenvolvido por [Daniel Contente Romanzini](https://github.com
 
 ## Tecnologias
 
+### Bibliotecas Principais
 - **Angular**: Framework para a criação de aplicações web escaláveis e de alta performance, baseado em componentes.
 - **Angular CLI**: Ferramenta de linha de comando que facilita a criação, desenvolvimento e build de projetos Angular.
 - **TypeScript**: Superset do JavaScript que adiciona tipagem estática para um desenvolvimento mais seguro e organizado.
