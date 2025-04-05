@@ -1,8 +1,10 @@
-# DevLearnGanesh
+# Dev Learn - Ganesh
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
+Este projeto foi desenvolvido por Daniel Contente Romanzini para o Codelab no escopo do Dev.Learn para aqueles que já possuem experiência em desenvolvimento Web.
 
-## Development server
+## Como Executar
+
+Para executar o projeto, garanta que o [Angular CLI](https://angular.dev/tools/cli/setup-local) esteja instalado.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
