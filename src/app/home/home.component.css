@@ -9,7 +9,7 @@
 }
 
 main{
-    color: white;
+    color: var(--default_white);;
 }
 
 #title{
@@ -28,9 +28,45 @@ main{
 }
 
 #section1{
-    height: 93vh;
+    min-height: 93vh;
 }
 
-#section2{
-    background-color: red;
+#section2_aux{
+    background-color: var(--default_section_background);
+    margin-left: var(--default_distance_border);
+    margin-right: var(--default_distance_border);
+    margin-bottom: 10vh;
+    padding: 1rem;
+    max-width: calc(var(--default_max_width)*0.8);
+}
+
+#ganesh{
+    color: var(--default_green);
+    font-style: normal;
+}
+
+#sobre_title{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#sobre_body{
+    font-size: 0.7rem;
+}
+
+#saiba_mais_btn{
+    border-color: var(--default_light_gray);
+    color: var(--default_white);;
+}
+
+#saiba_mais_btn:hover{
+    border-color: var(--default_green);
+    color: var(--default_green);
+}
+
+@media (max-width: 1000px) {
+    #section2_aux{
+        margin-left: var(--default_distance_border_mobile);
+        margin-right: var(--default_distance_border_mobile);
+    }
 }

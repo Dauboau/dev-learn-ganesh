@@ -14,10 +14,23 @@
 
     <section id="section2" class="d-flex flex-column justify-content-center align-items-center">
 
-        <h3>{{subtitile}}</h3>
+        <div id="section2_aux">
+            <h3 id="sobre_title">{{'home.about.title' | transloco}} <dfn id="ganesh">Ganesh</dfn></h3>
 
-        <p><i class="bi bi-search"></i> Saiba Mais</p>
-        
+            <span id="sobre_body" class="placeholder-glow w-100">
+            @if(about.length <= 0) {
+                <p class="placeholder w-100"></p>
+                <p class="placeholder w-100"></p>
+            } 
+            @else{
+                <p>{{about[0]}}</p>
+                <p>{{about[1]}}</p>
+            }
+            </span>
+
+            <a id="saiba_mais_btn" class="btn" href="https://ganesh.icmc.usp.br/br/about"><i class="bi bi-search"></i> {{'home.about.more' | transloco}}</a>
+        </div>
+
     </section>
 </main>
 

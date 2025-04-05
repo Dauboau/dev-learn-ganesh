@@ -1,40 +1,44 @@
-<header class="navbar navbar-expand-sm" data-bs-theme="dark">
+<header>
 
-    <nav class="container-fluid">
+    <nav class="navbar navbar-expand-sm" data-bs-theme="dark">
 
-      <a class="navbar-brand" href="" routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page">
-        <img src="../assets/ganesh-logo-white.svg" alt="Logo do Ganesh" class="d-inline-block align-text-top">
-      </a>
+      <div class="container-fluid">
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menu de navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <a class="navbar-brand" href="" routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page">
+          <img src="../assets/ganesh-logo-white.svg" alt="Logo do Ganesh" class="d-inline-block align-text-top">
+        </a>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="">{{'header.news' | transloco}}</a>
-          </li>
-          <li class="nav-item">
-            <div ngbDropdown>
-              <button type="button" class="btn btn-outline-primary" id="language_dropdown" ngbDropdownToggle>
-                <img class="flag" src="../../assets/{{selectedLanguage}}.svg" alt="Bandeira">
-                {{selectedLanguage}}
-              </button>
-              <div ngbDropdownMenu aria-labelledby="language_dropdown">
-                <button ngbDropdownItem (click)="selectLanguage('pt-BR')">
-                  <img class="flag" src="../../assets/pt-BR.svg" alt="Bandeira do Brasil">
-                  pt-BR
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menu de navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/news">{{'header.news' | transloco}}</a>
+            </li>
+            <li class="nav-item">
+              <div ngbDropdown>
+                <button type="button" class="btn btn-outline-primary" id="language_dropdown" ngbDropdownToggle>
+                  <img class="flag" src="../../assets/{{selectedLanguage}}.svg" alt="Bandeira">
+                  {{selectedLanguage}}
                 </button>
-                <button ngbDropdownItem (click)="selectLanguage('en-US')">
-                  <img class="flag" src="../../assets/en-US.svg" alt="Bandeira dos EUA">
-                  en-US
-                </button>
+                <div ngbDropdownMenu aria-labelledby="language_dropdown">
+                  <button ngbDropdownItem (click)="selectLanguage('pt-BR')">
+                    <img class="flag" src="../../assets/pt-BR.svg" alt="Bandeira do Brasil">
+                    pt-BR
+                  </button>
+                  <button ngbDropdownItem (click)="selectLanguage('en-US')">
+                    <img class="flag" src="../../assets/en-US.svg" alt="Bandeira dos EUA">
+                    en-US
+                  </button>
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
-     </div>
+            </li>
+          </ul>
+      </div>
+
+      </div>
 
     </nav>
     

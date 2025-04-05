@@ -4,8 +4,14 @@
 
 :root {
     --default_gray: #2E2C2F;
-    --default_light_gray: #BFBFBF;
+    --default_light_gray: #737373;
+    --default_green: #5EDA4A;
+    --default_dark_green: #25522E;
+    --default_white: #FFFFFF;
+    --default_section_background: rgba(39, 38, 38, 0.58);
     --default_distance_border: 10vw;
+    --default_distance_border_mobile: 2vw;
+    --default_max_width: 1350px;
 }
 
 body {

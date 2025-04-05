@@ -1,0 +1,86 @@
+
+:host {
+    display: block;
+    background-image: url('../../assets/background-2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+main{
+    color: var(--default_white);
+    min-height: 93vh;
+    margin-left: var(--default_distance_border);
+    margin-right: var(--default_distance_border);
+}
+
+section{
+    background-color: var(--default_section_background);
+    margin-top: 4vh;
+    margin-bottom: 7vh;
+    padding: 3rem;
+    width: 100%;
+    max-width: calc(var(--default_max_width)*0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+#table-div{
+    overflow:hidden;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--default_dark_green);
+    line-clamp: 1;
+}
+
+p{
+    color: var(--default_gray);
+    margin-bottom: 0px;
+    line-clamp: 2;
+}
+
+table {
+    border-collapse: separate; 
+    border-spacing: 1rem;
+}
+
+tr{
+    background-color: white;
+}
+
+td{
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+ngb-pagination::ng-deep .page-link {
+    background-color:transparent;
+    border-color: var(--default_white);
+    color: var(--default_white);
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px !important;
+}
+
+ngb-pagination::ng-deep .page-item.active .page-link {
+    background-color: var(--default_green) !important;
+}
+
+@media (max-width: 1000px) {
+    main{
+        margin-left: var(--default_distance_border_mobile);
+        margin-right: var(--default_distance_border_mobile);
+    }
+    section{
+        padding: 0.75rem;
+    }
+}

@@ -2,5 +2,14 @@
 {
     "header":{
         "news": "Notícias"
+    },
+    "home":{
+        "about":{
+            "title": "Sobre o",
+            "more": "Saiba mais"
+        }
+    },
+    "news":{
+        "title": "Notícias"
     }
 }

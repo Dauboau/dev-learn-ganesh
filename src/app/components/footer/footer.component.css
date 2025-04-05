@@ -12,12 +12,12 @@
 }
 
 .nav-link{
-    color: white;
+    color: var(--default_white);
     transition: color 0.3s ease-in-out;
 }
 
 p{
-    color: white;
+    color: var(--default_white);
     align-self: center;
     margin-bottom: 0px;
 }
@@ -38,3 +38,9 @@ p{
     font-size: 20px;
 }
 
+@media (max-width: 1000px) {
+    .navbar{
+        padding-left: var(--default_distance_border_mobile);
+        padding-right: var(--default_distance_border_mobile);
+    }
+}
