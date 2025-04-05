@@ -1,13 +1,4 @@
 
-:host {
-    display: block;
-    background-image: url('../../assets/background-2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-
 main{
     color: var(--default_white);;
 }
@@ -18,8 +9,9 @@ main{
 
 #subtitile{
     font-size: 1.25rem;
-    max-width: 30vw;
+    max-width: 35vw;
     text-align: center;
+    word-wrap:normal;
 }
 
 #logo{
@@ -28,7 +20,7 @@ main{
 }
 
 #section1{
-    min-height: 93vh;
+    min-height: 93dvh;
 }
 
 #section2_aux{
@@ -68,5 +60,8 @@ main{
     #section2_aux{
         margin-left: var(--default_distance_border_mobile);
         margin-right: var(--default_distance_border_mobile);
+    }
+    #subtitile{
+        max-width: none;
     }
 }

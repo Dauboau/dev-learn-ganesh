@@ -1,0 +1,19 @@
+
+:host {
+    display: block;
+    background-image: url('./../assets/background-2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100dvh;
+    animation: moveBackground 50s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: center bottom;
+    }
+    100% {
+        background-position: center top;
+    }
+}

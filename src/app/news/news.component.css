@@ -1,16 +1,7 @@
 
-:host {
-    display: block;
-    background-image: url('../../assets/background-2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-
 main{
     color: var(--default_white);
-    min-height: 93vh;
+    min-height: 93dvh;
     margin-left: var(--default_distance_border);
     margin-right: var(--default_distance_border);
 }
@@ -71,9 +62,20 @@ ngb-pagination::ng-deep .page-link {
     border-radius: 5px !important;
 }
 
+ngb-pagination::ng-deep .page-link:hover {
+    border-color: var(--default_green);
+    color: var(--default_green);
+}
+
 ngb-pagination::ng-deep .page-item.active .page-link {
     background-color: var(--default_green) !important;
 }
+
+ngb-pagination::ng-deep .page-item.active .page-link:hover {
+    color: var(--default_white);
+    border-color: var(--default_white);
+}
+
 
 @media (max-width: 1000px) {
     main{
