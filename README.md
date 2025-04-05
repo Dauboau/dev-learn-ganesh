@@ -1,6 +1,6 @@
 # Dev Learn - Ganesh
 
-Este projeto foi desenvolvido por Daniel Contente Romanzini para o Codelab no escopo do Dev.Learn para aqueles que já possuem experiência em desenvolvimento Web.
+Este projeto foi desenvolvido por [Daniel Contente Romanzini](https://github.com/Dauboau) para o Codelab no escopo do Dev.Learn para aqueles que já possuem experiência em desenvolvimento Web.
 
 ## Como Executar
 
